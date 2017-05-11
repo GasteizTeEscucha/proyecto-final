@@ -9,7 +9,7 @@ Se trata de analizar los tweets y catalogarlos según sean quejas o no (análisi
 Organización del equipo:
 
 Daniel Álvarez: Arquitectura con Apache Nifi y Hortonworks.
-Jesús Fuentes: Arquitectura con Apache Nifi y Hortonworks.
+Jesús Fuerte: Arquitectura con Apache Nifi y Hortonworks.
 Arkaitz Merino: Development con Spark Streaming.
 Oscar Bartolomé: Development con Spark Streaming.
 Helton Borges: Development con Spark Streaming.
