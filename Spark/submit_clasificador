@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Start Script"
+spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.4.1 --jars /opt/clasificador_tweets/mongo-hadoop-spark-2.0.2.jar --driver-class-path /opt/clasificador_tweets/mongo-hadoop-spark-2.0.2.jar --py-files /opt/clasificador_tweets/pymongo_spark.py,pymongo-3.4.0-py3.5-win32.egg /opt/clasificador_tweets/complaind_classifier.py
