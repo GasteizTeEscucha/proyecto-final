@@ -1,4 +1,4 @@
-# proyecto-final
+# Clasificador de tweets  
 Repositorio del proyecto final del curso Big Data and Business Intelligence de Vitoria-Gasteiz.
 </br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales (en este caso, Twitter) en relación con organismos gubernamentales.
