@@ -3,7 +3,7 @@ Repositorio del proyecto final del curso Big Data y Business Intelligence de Vit
 </br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales en relación con organismos gubernamentales.
 </br></br>
-Se trata de una proyecto Big Data completo, donde se analizan tweets en tiempo real y mediante técnicas de machine learning los clasifican como queja o no_queja. Un vez clasificados proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
+Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo real y mediante técnicas de machine learning los clasifican como queja o no_queja. Una vez clasificados se proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
 </br></br></br>
 ### Herramientas:
 * [Servidor Hortonworks](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB)
