@@ -6,7 +6,7 @@ El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de 
 Se trata de una proyecto Big Data completo, donde se analizan tweets en tiempo real y mediante técnicas de machine learning los clasifican como queja o no_queja. Un vez clasificados proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
 </br></br></br>
 ### Herramientas:
-* [Servidor Hortonworks + Hadoop](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB)
+* [Servidor Hortonworks](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB)
 * [Apache Nifi](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/NiFi)
 * Apache Kafka
 * [Apache Spark: PySpark, Spark Streaming](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Spark)
