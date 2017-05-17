@@ -20,14 +20,14 @@ Se trata de una proyecto Big Data completo, donde se analizan tweets en tiempo r
 * Mediante Spark Streamin se establece un streaming de tweets con Kafka.
 * Se hace una predicción mediante un algortimo Naive Bayes Classifier que clasifica los tweets (queja, no_queja).
 * Los tweets clasificados se cargan en Kafka mediante un Producer en PySpark.
-* Con Nifi se cargan los tweets clasificados desde kafka a MonogoDB.
-* Desde las herramientas de Business Intelligence se establece una conexión con MongoDB para la visualización.
+* Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
+* Desde las herramientas de Business Intelligence se utiliza la API Simba para establecer una conexión con MongoDB para la visualización   de los datos.
 </br></br>
 </br></br>
 </br>
 Organización del equipo:
 </br></br>
-Daniel Álvarez: Arquitectura con Hortonworks, kafka, Spark y Nifi.</br>
+Daniel Álvarez: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 Jesús Fuerte: Arquitectura con Apache Nifi y Hortonworks.</br>
 Arkaitz Merino: Development con Spark.</br>
 Oscar Bartolomé: Development con Spark.</br>
