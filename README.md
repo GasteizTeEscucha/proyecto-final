@@ -7,12 +7,12 @@ Se trata de analizar los tweets y catalogarlos según sean quejas o no (análisi
 </br></br>
 </br>
 Organización del equipo:
-</br>
-Daniel Álvarez: Arquitectura con Apache Nifi y Hortonworks.</br>
+</br></br>
+Daniel Álvarez: Arquitectura con Hortonworks, kafka, Spark y Nifi.</br>
 Jesús Fuerte: Arquitectura con Apache Nifi y Hortonworks.</br>
-Arkaitz Merino: Development con Spark Streaming.</br>
-Oscar Bartolomé: Development con Spark Streaming.</br>
-Helton Borges: Development con Spark Streaming.</br>
+Arkaitz Merino: Development con Spark.</br>
+Oscar Bartolomé: Development con Spark.</br>
+Helton Borges: Development con Spark.</br>
 Unai Barredo: Machine Learning con Python.</br>
 Odei Barredo: Machine Learning con R.</br>
 Alexander Somovilla: Machine Learning con R.</br>
