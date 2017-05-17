@@ -5,7 +5,7 @@ El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de 
 </br></br>
 Se trata de una estructura completa donde se analizan tweets en tiempo real y mediante técnicas de machine learning clasificarlos como queja o no_queja. Un vez clasificados proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
 </br></br></br>
-##Herramientas:
+### Herramientas:
 * Servidor Hortonworks + Hadoop
 * Apache Nifi
 * Apache Kafka
@@ -14,7 +14,7 @@ Se trata de una estructura completa donde se analizan tweets en tiempo real y me
 * Base de datos NoSQL: MongoDB
 * Business Intelligence: QlikView, Tableau, PowerBI
 </br></br>
-##El proyecto tiene la siguiente estructura:
+### El proyecto tiene la siguiente estructura:
 * Mediante la API de Twitter se establece un streaming de tweets con Nifi.
 * Se cargan lo tweets desde Nifi a Kafka.
 * Mediante Spark Streamin se establece un streaming de tweets con Kafka.
