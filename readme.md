@@ -12,7 +12,7 @@ Se trata de una proyecto Big Data completo, donde se analizan tweets en tiempo r
 * [Apache Spark: PySpark, Spark Streaming](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Spark)
 * [Machine Learning: Algoritmo Naive Bayes](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Machine_Learning)
 * Base de datos NoSQL: MongoDB
-* Business Intelligence: QlikView, Tableau, PowerBI
+* [Business Intelligence: QlikView, Tableau, PowerBI](https://github.com/GasteizTeEscucha/proyecto-final/tree/master/Business%20Intelligence)
 </br></br>
 ### El proyecto tiene la siguiente estructura:
 * Mediante la API de Twitter se establece un streaming de tweets con Nifi.
