@@ -1,10 +1,10 @@
 # proyecto-final
 Repositorio del proyecto final del curso Big Data and Business Intelligence de Vitoria-Gasteiz.
-</br>
+</br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales (en este caso, Twitter) en relación con organismos gubernamentales.
-</br>
+</br></br>
 Se trata de analizar los tweets y catalogarlos según sean quejas o no (análisis de sentimientos) y, en caso de serlo, clasificarlas por temáticas como movilidad, delincuencia, etc. y después mostrar un "mapa de calor" con las problemáticas.
-</br>
+</br></br>
 </br>
 Organización del equipo:
 </br>
