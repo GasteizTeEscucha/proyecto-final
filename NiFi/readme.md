@@ -36,3 +36,4 @@ Dar al Play. NiFi arrancará todos los procesadores y empezará a funcionar.
 cd /opt/nifi-1.2.0/
 mkdir trafico
 mkdir tiempo
+![imgnifi9](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/NiFi/imagenesNifi/nifi9.jpg)
