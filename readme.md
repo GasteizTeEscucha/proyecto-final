@@ -1,7 +1,7 @@
 # Big Data - Clasificador de tweets en tiempo real
 Repositorio del proyecto final del curso Big Data y Business Intelligence de Vitoria-Gasteiz.
 </br></br>
-El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales (en este caso, Twitter) en relación con organismos gubernamentales.
+El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales en relación con organismos gubernamentales.
 </br></br>
 Se trata de una proyecto Big Data completo, donde se analizan tweets en tiempo real y mediante técnicas de machine learning los clasifican como queja o no_queja. Un vez clasificados proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
 </br></br></br>
