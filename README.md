@@ -1,4 +1,4 @@
-# Clasificador de tweets en tiempo real
+# Big Data - Clasificador de tweets en tiempo real
 Repositorio del proyecto final del curso Big Data y Business Intelligence de Vitoria-Gasteiz.
 </br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales (en este caso, Twitter) en relación con organismos gubernamentales.
