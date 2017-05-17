@@ -1,9 +1,28 @@
-# Clasificador de tweets  
+# Clasificador de tweets en tiempo real
 Repositorio del proyecto final del curso Big Data and Business Intelligence de Vitoria-Gasteiz.
 </br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales (en este caso, Twitter) en relación con organismos gubernamentales.
 </br></br>
-Se trata de analizar los tweets y catalogarlos según sean quejas o no (análisis de sentimientos) y, en caso de serlo, clasificarlas por temáticas como movilidad, delincuencia, etc. y después mostrar un "mapa de calor" con las problemáticas.
+Se trata de una estructura completa donde se analizan tweets en tiempo real y mediante técnicas de machine learning clasificarlos como queja o no_queja. Un vez clasificados proporciona una visualización del análisis en diversas herramientas Business Intelligence. 
+</br></br></br>
+##Herramientas:
+* Servidor Hortonworks + Hadoop
+* Apache Nifi
+* Apache Kafka
+* Apache Spark: PySpark, Spark Streaming
+* Machine Learning: Algoritmo Naive Bayes
+* Base de datos NoSQL: MongoDB
+* Business Intelligence: QlikView, Tableau, PowerBI
+</br></br>
+##El proyecto tiene la siguiente estructura:
+* Mediante la API de Twitter se establece un streaming de tweets con Nifi.
+* Se cargan lo tweets desde Nifi a Kafka.
+* Mediante Spark Streamin se establece un streaming de tweets con Kafka.
+* Se hace una predicción mediante un algortimo Naive Bayes Classifier que clasifica los tweets (queja, no_queja).
+* Los tweets clasificados se cargan en Kafka mediante un Producer en PySpark.
+* Con Nifi se cargan los tweets clasificados desde kafka a MonogoDB.
+* Desde las herramientas de Business Intelligence se establece una conexión con MongoDB para la visualización.
+</br></br>
 </br></br>
 </br>
 Organización del equipo:
