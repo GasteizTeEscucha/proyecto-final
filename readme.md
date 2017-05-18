@@ -30,7 +30,7 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 Organización del equipo:
 </br></br>
 Daniel Álvarez: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
-Jesús Fuerte: Arquitectura con Apache Nifi y Hortonworks.</br>
+Jesús Fuerte: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 Arkaitz Merino: Programador Spark/Python.</br>
 Oscar Bartolomé: Programador Spark/Python.</br>
 Helton Borges: Programador Spark/Python.</br>
@@ -45,3 +45,4 @@ Jorge Iñiguez De Ciriano: Documentación y diseño de BI.</br>
 Mónica Vázquez: Branding y comunicación.</br> 
 Daniel Redondo: Visualización y reporting con QlikView.</br>
 Miriam Insagurbe: Visualización y reporting con Power BI. </br>
+Julen Manzano: Tutor
