@@ -37,8 +37,20 @@ dicLemas = dict(lemasRDD
              .map(lambda x: (x[0], x[1]))
              .collect())
 
+probRDD = sc.textFile('file:///opt/clasificador_tweets/NaiveBayes.csv')
+dicQueja = (dict(probRDD
+             .map(lambda l: l.split(';'))
+             .map(lambda x: (x[0], (x[1], x[2], x[3])))
+             .collect()))
 
-"""Remueve las puntuaciones, caracteres especiales, links y lo transforma a minuscula.
+probRDD2 = sc.textFile('file:///opt/clasificador_tweets/NB_tema.csv')
+dicTema = (dict(probRDD2
+             .map(lambda l: l.split(';'))
+             .map(lambda x: (x[0], (x[1], x[2], x[3], x[4], x[5], x[6])))
+			 .collect()))
+
+
+'''Remueve las puntuaciones, caracteres especiales, links y lo transforma a minuscula.
     Autores: Oscar Bartolomé
     Note:
         Ultiliza la siguiente librería. 
@@ -49,7 +61,8 @@ dicLemas = dict(lemasRDD
         text (str): Un string.
     Returns:
         str: el conjunto de palabras depues de aplicar los filtros de las expresiones regulares
-    """
+	'''
+
 def removePunctuation(tweetValue):
     text = tweetValue[0]
     text = ' '.join(re.sub(u"(@[A-Za-z]+)|([^a-zA-ZÁ-Úá-ú \t])|(\w+:\/\/\S+)",
@@ -95,35 +108,92 @@ def buscarBarrio(tweetValue, barrios = barriosVitoria):
       localidad = barrio
   return (tweetValue[0], localidad)
 
-"""Clasifica un tweet en castellano, aplicando reglas de un Clasificador bayesiano creado en R.
-    Autor: Arkaitz Merino
-    Note:
-        Ultiliza reglas de un Algortimo Naive Bayes implementado en R.
-        Descripción: Con tecnicas de Machine-Learning nuestros cientificos de datos han creado un algortimo que
-        puede clasificar, si el tweet se trata de una queja o no.
-        El algortimo está en versión de prueba y mejora.
-        
-        Autores algoritmo en R: Odei Barredo, Unai Barredo, Alex Somovilla, Arkaitz Merino, Oscar Bartolomé
-        repositorio: "https://github.com/<Por definir>"
-    Ejemplo: "Esto es un tweet de queja" -> ("Esto es un tweet de queja", 1)
-             "Esto no es una queja" -> ("Esto no es una queja", 0)
-    Args:
-        tweet (str): un string.
-    Returns:
-        (tweet, Clasificacion): el tweet y su clasificacion
-    """
-dicNaiveBayes = {"rata":(0.15,0.85), "quejar":(0.8,0.1), "jamon":(0.3,0.7)}
-def clasificar(tweetValue, dic = dicNaiveBayes): 
-  probQueja = 1
-  probNoQueja = 1 
+"""
+Created on Wed May 17 08:41:42 2017
+
+@author: Óscar Bartolomé, Arkaitz Merino
+Args: tweetValue: Tupla (Texto tweet,  barrio)
+      dic: CSV con las probabilidades por palabra del algoritmo Naive Bayes
+Returns:
+        Tupla (Texto tweet, clasificación, barrio)
+
+"""
+
+def clasificar(tweetValue, dic = dicQueja, dic2 = dicTema): 
+  probQueja = 0.5
+  probNoQueja = 0.5 
+  probTotalQueja = 0
+  probTotalNoQueja = 0
   clasificacion = 0
-  for palabra in tweetValue[0].split(" "):
+  probAdmin = 0.12 
+  probTotalAdmin = 0
+  probDelin = 0.14 
+  probTotalDelin = 0
+  probEP = 0.14 
+  probTotalEP = 0
+  probLimp = 0.24 
+  probTotalLimp = 0
+  probMov = 0.36 
+  probTotalMov = 0
+  tematica = ""
+  tematicas = [u'Administracion', u'Delincuencia', u'Espacio Publico', u'Limpieza', u'Movilidad']
+  listAux = tweetValue[0].split(" ")
+  
+  
+  for palabra in listAux:
     if dic.has_key(palabra):
-      probQueja = probQueja * dic[palabra][0]
-      probNoQueja = probNoQueja * dic[palabra][1]
-  if probQueja > probNoQueja:
-     clasificacion = 1
-  return (tweetValue[0], clasificacion, tweetValue[1])
+      if dic[palabra][0] == "1":
+        probNoQueja = probNoQueja * float(dic[palabra][1])
+        probQueja = probQueja * float(dic[palabra][2])
+    if dic2.has_key(palabra):
+      if dic2[palabra][0] == "1":
+        probAdmin = probAdmin * float(dic2[palabra][1])
+        probDelin = probDelin * float(dic2[palabra][2])
+        probEP = probEP * float(dic2[palabra][3])
+        probLimp = probLimp * float(dic2[palabra][4])
+        probMov = probMov * float(dic2[palabra][5])
+  for pos in dic:
+    if dic.has_key(palabra):
+      if dic[palabra][0] == 0: 
+        if pos not in listAux:
+          probNoQueja = probNoQueja * float(dic[pos][1])
+          probQueja = probQueja * dic[pos][2]
+  for pos2 in dic2:
+    if dic2.has_key(palabra): 
+      if dic2[palabra][0] == 0: 
+        if pos2 not in listAux:
+          probAdmin = probAdmin * float(dic2[palabra][1])
+          probDelin = probDelin * float(dic2[palabra][2])
+          probEP = probEP * float(dic2[palabra][3])
+          probLimp = probLimp * float(dic2[palabra][4])
+          probMov = probMov * float(dic2[palabra][5])
+  probTotalQueja  = probQueja/(probQueja + probNoQueja)
+  probTotalNoQueja  = probNoQueja/(probQueja + probNoQueja) 
+  probTotalAdmin  = probAdmin/(probAdmin + probDelin + probEP + probLimp + probMov)
+  probTotalDelin  = probDelin/(probAdmin + probDelin + probEP + probLimp + probMov)
+  probTotalEP  = probEP/(probAdmin + probDelin + probEP + probLimp + probMov)
+  probTotalLimp  = probLimp/(probAdmin + probDelin + probEP + probLimp + probMov)
+  probTotalMov  = probMov/(probAdmin + probDelin + probEP + probLimp + probMov)
+  listAux2 = [probTotalAdmin, probTotalDelin, probTotalEP, probTotalLimp, probTotalMov]
+  if probTotalQueja > probTotalNoQueja:
+    clasificacion = 1
+  mayorProb = 0
+  for i in range(len(listAux2)):
+    if i == 0:
+      mayorProb = listAux2[i]
+      tematica = tematicas[i]
+    elif mayorProb < listAux2[i]:
+      mayorProb = listAux2[i]
+      tematica = tematicas[i]
+  print(probTotalQueja)
+  print(probTotalNoQueja)
+  print("_________________")
+  print(probTotalAdmin)
+  print(probTotalDelin)
+  print(probTotalEP)
+  print(probTotalLimp)
+  print(probTotalMov)
+  return (tweetValue[0], clasificacion, tweetValue[1], tematica)
 
 def paraJson(text):
     return (json.loads(text[1])['ID'],
@@ -143,7 +213,9 @@ def paraJson(text):
         escritura en la base de datos noSQL <por definir>.
     """
 def guardarClasificacion(x):
-  return str(u'{ "ID":"' + str(x[0]) + u'","texto":"' + str(x[1][0]) + u'", "clasificacion":"' + str(x[1][1]) + u'", "barrio":"' + str(x[1][2])+ u'"}')
+  print str(x)
+  clas = (u'{ "ID":"' + x[0] + u'","texto":"' + x[1][0] + u'", "clasificacion":"' + str(x[1][1]) + u'", "barrio":"' + x[1][2]+ u'", "tematica":"' + x[1][3]+'"}').encode('utf-8')
+  return clas
 
 
 #Conecta a kafka
