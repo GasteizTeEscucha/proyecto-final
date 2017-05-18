@@ -23,6 +23,8 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 * Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
 * Desde las herramientas de Business Intelligence se utiliza la API Simba para establecer una conexión con MongoDB para la visualización   de los datos.
 </br></br>
+</br>
+![diagrama](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/Diagram.png)
 </br></br>
 </br>
 Organización del equipo:
