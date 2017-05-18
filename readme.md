@@ -24,7 +24,7 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 * Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
 * Desde las herramientas de Business Intelligence se utiliza la API Simba para establecer una conexión con MongoDB para la visualización   de los datos.
 
-# Equipo:
+## Equipo:
 
 [Daniel Álvarez](https://www.linkedin.com/in/danielalvarezlopez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 [Jesús Fuerte](https://www.linkedin.com/in/jesus-fuerte-fernandez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
