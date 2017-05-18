@@ -31,9 +31,9 @@ Organización del equipo:
 </br></br>
 Daniel Álvarez: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 Jesús Fuerte: Arquitectura con Apache Nifi y Hortonworks.</br>
-Arkaitz Merino: Development con Spark.</br>
-Oscar Bartolomé: Development con Spark.</br>
-Helton Borges: Development con Spark.</br>
+Arkaitz Merino: Programador Spark/Python.</br>
+Oscar Bartolomé: Programador Spark/Python.</br>
+Helton Borges: Programador Spark/Python.</br>
 Unai Barredo: Machine Learning con Python.</br>
 Odei Barredo: Machine Learning con R.</br>
 Alexander Somovilla: Machine Learning con R.</br>
