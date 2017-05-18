@@ -27,22 +27,23 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 </br></br>
 </br>
 
-Organización del equipo:
+Equipo:
 </br></br>
-Daniel Álvarez: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
-Jesús Fuerte: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
-Arkaitz Merino: Programador Spark/Python.</br>
-Oscar Bartolomé: Programador Spark/Python.</br>
-Helton Borges: Programador Spark/Python.</br>
-Unai Barredo: Machine Learning con Python.</br>
-Odei Barredo: Machine Learning con R.</br>
-Alexander Somovilla: Machine Learning con R.</br>
-Mikel Ramos: Bases de datos con MongoDB.</br>
+[Daniel Álvarez](https://www.linkedin.com/in/danielalvarezlopez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
+[Jesús Fuerte](https://www.linkedin.com/in/jesus-fuerte-fernandez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
+[Arkaitz Merino](https://www.linkedin.com/in/arkaitz-merino/): Programador Spark/Python.</br>
+[Oscar Bartolomé](https://www.linkedin.com/in/obartolomep/): Programador Spark/Python.</br>
+[Helton Borges](https://www.linkedin.com/in/heltonborges/): Programador Spark/Python.</br>
+[Unai Barredo](https://www.linkedin.com/in/ubarredo/): Machine Learning con Python.</br>
+[Odei Barredo](https://www.linkedin.com/in/odeibarredo/): Machine Learning con R.</br>
+[Alexander Somovilla](https://www.linkedin.com/in/alexsomovilla/): Machine Learning con R.</br>
+[Mikel Ramos](https://www.linkedin.com/in/mikel-ramos-6b5805107/): Bases de datos con MongoDB.</br>
 Virginia Esquinas: Bases de datos con MongoDB.</br>
-Blanca Soto: Bases de datos con MongoDB.</br>
-Esperanza García: Divulgación en medios y documentación.</br>
-Jorge Iñiguez De Ciriano: Documentación y diseño de BI.</br>
-Mónica Vázquez: Branding y comunicación.</br> 
-Daniel Redondo: Visualización y reporting con QlikView.</br>
-Miriam Insagurbe: Visualización y reporting con Power BI. </br>
-Julen Manzano: Tutor
+[Blanca Soto](https://www.linkedin.com/in/blanca-soto-salvador-a25b35134/): Bases de datos con MongoDB.</br>
+[Esperanza García](https://www.linkedin.com/in/esperanza-garcia-moreno/): Divulgación en medios y documentación.</br>
+[Jorge Iñiguez De Ciriano](https://www.linkedin.com/in/jorgeiniguez/): Documentación y diseño de BI.</br>
+[Mónica Vázquez](https://www.linkedin.com/in/monicavazquezmu%C3%B1oz/): Branding y comunicación.</br> 
+[Daniel Redondo](https://www.linkedin.com/in/daniel-redondo-iglesias/): Visualización y reporting con QlikView.</br>
+[Miriam Insagurbe](https://www.linkedin.com/in/miriam-insagurbe-davies/): Visualización y reporting con Power BI. </br>
+[Julen Manzano](https://www.linkedin.com/in/julenmanzano/): Tutor
+# ![imgequipo](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/fotoequipo.jpg)
