@@ -1,5 +1,4 @@
 # Big Data - Clasificador de tweets en tiempo real
-![imgnifi10](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/Diagram.png)
 Repositorio del proyecto final del curso Big Data y Business Intelligence de Vitoria-Gasteiz.
 </br></br>
 El proyecto surge como iniciativa de los propios alumnos, al ver posibilidad de gestionar de forma más eficaz las demandas de los usuarios en redes sociales en relación con organismos gubernamentales.
@@ -23,9 +22,9 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 * Los tweets clasificados se cargan en Kafka mediante un Producer en PySpark.
 * Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
 * Desde las herramientas de Business Intelligence se utiliza la API Simba para establecer una conexión con MongoDB para la visualización   de los datos.
+# ![imgnifi10](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/Diagram.png)
 </br></br>
 </br>
-![imgnifi10](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/Diagram.png)
 </br></br>
 </br>
 Organización del equipo:
