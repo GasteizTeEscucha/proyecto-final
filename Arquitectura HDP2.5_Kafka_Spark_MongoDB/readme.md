@@ -80,5 +80,5 @@ Actions -> Add service -> check MongoDB -> Next -> Next -> Next -> Deploy
 	sudo chown mongod:mongod /tmp/mongodb-8993.sock
 
 ** Si se descuadra la hora de la máquina virtual con la de la localización hacer lo siguiente:
-	rm -f /etc/localtime
+        rm -f /etc/localtime
 	ln -s /usr/share/zoneinfo/Europe/Madrid /etc/localtime
