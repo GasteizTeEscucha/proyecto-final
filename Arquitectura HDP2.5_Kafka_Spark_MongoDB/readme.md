@@ -75,10 +75,12 @@ Actions -> Add service -> check MongoDB -> Next -> Next -> Next -> Deploy
 ![Image15](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB/Ambari/ambari15.png)
 
 ** A veces con Ambari hay problemas con el servicio de mongodb (suele suceder cuando paras de golpe la VM), te dice que está encendido pero no es así. Para solucionar esto hay que hacer:
+
 	cd /var/run/mongodb
 	rm mongodb.pid
 	sudo chown mongod:mongod /tmp/mongodb-8993.sock
 
 ** Si se descuadra la hora de la máquina virtual con la de la localización hacer lo siguiente:
+
         rm -f /etc/localtime
 	ln -s /usr/share/zoneinfo/Europe/Madrid /etc/localtime
