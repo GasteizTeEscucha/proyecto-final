@@ -23,9 +23,9 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 * Los tweets clasificados se cargan en Kafka mediante un Producer en PySpark.
 * Con Nifi se cargan los tweets clasificados desde Kafka a MongoDB.
 * Desde las herramientas de Business Intelligence se utiliza la API Simba para establecer una conexión con MongoDB para la visualización   de los datos.
-</br>
-Equipo:
-</br></br>
+
+# Equipo:
+
 [Daniel Álvarez](https://www.linkedin.com/in/danielalvarezlopez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 [Jesús Fuerte](https://www.linkedin.com/in/jesus-fuerte-fernandez/): Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
 [Arkaitz Merino](https://www.linkedin.com/in/arkaitz-merino/): Programador Spark/Python.</br>
@@ -42,5 +42,5 @@ Virginia Esquinas: Bases de datos con MongoDB.</br>
 [Mónica Vázquez](https://www.linkedin.com/in/monicavazquezmu%C3%B1oz/): Branding y comunicación.</br> 
 [Daniel Redondo](https://www.linkedin.com/in/daniel-redondo-iglesias/): Visualización y reporting con QlikView.</br>
 [Miriam Insagurbe](https://www.linkedin.com/in/miriam-insagurbe-davies/): Visualización y reporting con Power BI. </br>
-[Julen Manzano](https://www.linkedin.com/in/julenmanzano/): Tutor
+[Julen Manzano](https://www.linkedin.com/in/julenmanzano/): Tutor 
 # ![imgequipo](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/fotoequipo.jpg)
