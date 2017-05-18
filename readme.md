@@ -26,8 +26,7 @@ Se trata de un proyecto Big Data completo, donde se analizan tweets en tiempo re
 
 </br></br>
 </br>
-</br></br>
-</br>
+
 Organización del equipo:
 </br></br>
 Daniel Álvarez: Arquitectura con Hortonworks, Kafka, Spark y Nifi.</br>
