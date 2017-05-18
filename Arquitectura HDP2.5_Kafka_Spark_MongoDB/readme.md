@@ -25,7 +25,8 @@
 
 9.	Después de esto, ir a Spark > Config > Advanced spark-log4j-properties
 Y cambiar donde pone:
-log4j.rootCategory=INFO -----> log4j.rootCategory=ERROR
+
+	log4j.rootCategory=INFO -----> log4j.rootCategory=ERROR
 
 
 ![Image6](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB/Ambari/ambari6.png)
@@ -38,25 +39,36 @@ log4j.rootCategory=INFO -----> log4j.rootCategory=ERROR
 
 11.	Crear el fichero /etc/yum.repos.d/mongodb-org-3.2.repo para la instalación mediante yum.
 12.	Entrar en el fichero creado, escribir y guardar:
-[mongodb-org-3.2]
-name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/$basearch/
-gpgcheck=1
-enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
+
+	[mongodb-org-3.2]
+	name=MongoDB Repository
+	baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/$basearch/
+	gpgcheck=1
+	enabled=1
+	gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
+	
 13.	Instalar el repositorio creado de MongoDB
-sudo yum install -y mongodb-org
+
+	sudo yum install -y mongodb-org
+	
 14.	Arrancar el servicio
-sudo service mongod start
+
+	sudo service mongod start
+
 15.	Para que arranque el servicio automáticamente
-sudo chkonfig mongod on
+
+	sudo chkonfig mongod on
+
 16.	Instalar el servicio de MongoDB en Ambari para una mejor gestión.
-cd /var/lib/ambari-server/resources/stacks/HDP/2.5/services
-git clone https://github.com/nikunjness/mongo-ambari.git
-sudo service ambari restart
-sudo service ambari-server restart
+
+	cd /var/lib/ambari-server/resources/stacks/HDP/2.5/services
+	git clone https://github.com/nikunjness/mongo-ambari.git
+	sudo service ambari restart
+	sudo service ambari-server restart
+
 17.	Dentro del Dashboard de Ambari
-Actions -> Add service -> check MongoDB -> Next -> Next -> Next -> Deploy
+
+	Actions -> Add service -> check MongoDB -> Next -> Next -> Next -> Deploy
 
 
 ![Image8](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/Arquitectura%20HDP2.5_Kafka_Spark_MongoDB/Ambari/ambari8.png)
