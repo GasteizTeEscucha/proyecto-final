@@ -1,3 +1,5 @@
+# PoweBI
+![imgPowerBi](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/Business%20Intelligence/PowerBI/powerBi.jpg)
 Microsoft Power BI permite la visualización de los datos  a través herramientas de análisis, lo que le permite analizar y compartir la información fácilmente.
 Una vez tenemos instalado MongoDB,  hay que descargar e instalar el controlador DataDirect para MongoDB ODBC correspondiente a nuestra versión de Power BI.
 Seguir las indicaciones de instalación y hacer click en Administrador ODBC, después seleccionar la pestaña de "Usuario DSN" o "Sistema DSN" y  pinchar el botón de "Agregar"
