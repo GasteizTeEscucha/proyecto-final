@@ -68,7 +68,8 @@ def removePunctuation(tweetValue):
 
     coding = {'Á': 'A', 'É': 'E',
           'Í': 'I', 'Ó': 'O', 'Ú': 'U', 'á': 'a',
-          'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u'}
+          'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',  
+          'Ü': 'U', 'ü': 'u'}
 
     for k, v in coding.items():
         text = text.replace(k, v)
