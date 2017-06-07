@@ -73,7 +73,7 @@ def removePunctuation(tweetValue):
     for k, v in coding.items():
         text = text.replace(k, v)
 
-    text = ' '.join(re.sub(u"(@[A-Za-z]+)|([^a-zA-ZÁ-Úá-ú \t])|(\w+:\/\/\S+)",
+    text = ' '.join(re.sub(u"(@[A-Za-z]+)|([^a-zA-Z \t])|(\w+:\/\/\S+)",
                            " ", text).lower().split())
     return  (text, tweetValue[1])
 
