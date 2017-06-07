@@ -61,10 +61,10 @@ Y cambiar donde pone:
 
 16.	Instalar el servicio de MongoDB en Ambari para una mejor gestión.
 
-	cd /var/lib/ambari-server/resources/stacks/HDP/2.5/services
-	git clone https://github.com/nikunjness/mongo-ambari.git
-	sudo service ambari restart
-	sudo service ambari-server restart
+	# cd /var/lib/ambari-server/resources/stacks/HDP/2.5/services
+	# git clone https://github.com/nikunjness/mongo-ambari.git
+	# sudo service ambari restart
+	# sudo service ambari-server restart
 
 17.	Dentro del Dashboard de Ambari
 
