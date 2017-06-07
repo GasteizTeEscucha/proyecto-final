@@ -65,6 +65,14 @@ dicTema = (dict(probRDD2
 
 def removePunctuation(tweetValue):
     text = tweetValue[0]
+
+    coding = {'Á': 'A', 'É': 'E',
+          'Í': 'I', 'Ó': 'O', 'Ú': 'U', 'á': 'a',
+          'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u'}
+
+    for k, v in coding.items():
+        text = text.replace(k, v)
+
     text = ' '.join(re.sub(u"(@[A-Za-z]+)|([^a-zA-ZÁ-Úá-ú \t])|(\w+:\/\/\S+)",
                            " ", text).lower().split())
     return  (text, tweetValue[1])
@@ -81,7 +89,7 @@ def removePunctuation(tweetValue):
     """
 def lematizar(tweetValue, dic = dicLemas):
   tweetLematizado = tweetValue[0].split(' ')
-  for i in range(1, len(tweetLematizado)):
+  for i in range(0, len(tweetLematizado)):
     if dic.has_key(tweetLematizado[i]):
       tweetLematizado[i] = dic[tweetLematizado[i]]
   return (' '.join(tweetLematizado), tweetValue[1])
