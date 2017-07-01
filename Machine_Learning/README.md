@@ -144,7 +144,7 @@ El dataset original contenía 911 palabras diferentes y, consecuentemente, el mi
 
 ### Validación cruzada de K iteraciones
 
-Se ha procedido de igual forma que con el clasificador queja/no-queja.
+Se ha procedido de igual forma que con el clasificador queja / no-queja.
 
 ### Análisis de sensibilidad de los parámetros del algoritmo de Naïve Bayes
 
