@@ -1,4 +1,4 @@
-# Big Data - Clasificador de tweets en tiempo real
+# Big Data - Clasificador de tweets en tiempo real 
 # ![imgnifi10](https://github.com/GasteizTeEscucha/proyecto-final/blob/master/img/Diagram0.png)
 Repositorio del proyecto final del curso Big Data y Business Intelligence de Vitoria-Gasteiz.
 </br></br>
